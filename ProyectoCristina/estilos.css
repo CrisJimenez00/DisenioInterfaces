@@ -11,6 +11,7 @@ header {
   align-items: center;
 }
 
+/*Buscador*/
 header p#buscador {
   background-color: #e28788;
   width: 100%;
@@ -20,6 +21,7 @@ header p#buscador {
   margin-top: -10%;
 }
 
+/*Iconos*/
 header img {
   height: auto;
   width: 10%;
@@ -30,20 +32,22 @@ header img#icono {
   margin-top: -15%;
 }
 
+/*Logo*/
 header img.logo {
   height: auto;
   width: 50%;
   margin-top: -7%;
   margin-left: -7%;
 }
-div {
+
+/*Menú*/
+label > div {
   background-color: white;
-  padding: 5px;
-  border-radius: 5px;
-  margin-left: 5px;
   cursor: pointer;
-  transition: left 5s;
+  margin-top: -3em;
 }
+
+/*Líneas del menú*/
 div > span.hamburguer-line {
   display: flex;
   flex-direction: column;
@@ -52,18 +56,93 @@ div > span.hamburguer-line {
   background-color: black;
   margin: 5px 0;
 }
-nav.main-menu {
-  position: fixed;
-  left: -200px;
-  top: -10px;
+/*Cuerpo de la página*/
+nav {
+  display: none;
+} /*ESTÁ DESAPARECIDO PARA PODER TRATAR LA PÁGINA*/
+
+main {
   display: flex;
   flex-direction: column;
-  background-color: #293133;
-  width: 200px;
-  height: 100vh;
-  justify-content: center;
   text-align: center;
-  overflow: hidden;
-  white-space: nowrap;
-  transition: left 0.25s;
+}
+/*Cabecera*/
+h1 {
+  color: #e28788;
+  width: 100%;
+}
+
+article img {
+  width: 100%;
+  height: 12em;
+}
+article > span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+article a {
+  font-size: 18px;
+}
+/*Iconos del árticulo*/
+article img#icono,
+article img#icono2 {
+  height: auto;
+  width: 100%;
+}
+article div {
+  display: flex;
+  width: 2em;
+  margin-right: 3em;
+}
+article div > img {
+  margin-right: 1em;
+}
+
+/*Número de páginas*/
+main > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+main > ul > li {
+  border: 1px solid black;
+  background-color: #f0e4c9;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 42%;
+  font-weight: bold;
+}
+main > ul > li#pass {
+  border-radius: 0%;
+}
+/*Footer*/
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #f0e4c9;
+  justify-content: space-around;
+}
+footer p#redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer p#redes > label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+footer p#redes > img {
+  width: 100%;
+  height: auto;
+  width: 5%;
+}
+footer small {
+  justify-content: left;
 }
