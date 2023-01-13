@@ -119,6 +119,7 @@ main > ul > li {
 main > ul > li#pass {
   border-radius: 0%;
 }
+
 /*Footer*/
 footer {
   background-color: black;
@@ -128,21 +129,25 @@ footer {
   color: #f0e4c9;
   justify-content: space-around;
 }
+
 footer p#redes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 footer p#redes > label {
   width: 100%;
   text-align: center;
   margin-bottom: 5%;
 }
+
 footer p#redes > img {
   width: 100%;
   height: auto;
   width: 5%;
 }
+
 footer small {
   justify-content: left;
 }
