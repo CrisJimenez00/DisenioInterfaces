@@ -7,19 +7,6 @@
     <link rel="stylesheet" href="estilos.css" />
     <title>Kunska</title>
     <link rel="shortcut icon" href="img/Logo empresa.png" type="image/x-icon" />
-    <style>
-      img {
-        width: 393px;
-        height: 133px;
-      }
-      h2 > a {
-        text-decoration: none;
-        color: black;
-      }
-      h5 {
-        font-weight: lighter;
-      }
-    </style>
   </head>
   <body>
     <!--Versión Móvil-->
@@ -63,7 +50,7 @@
     <!--Cuerpo de la página-->
     <main>
       <h1>Últimas noticias</h1>
-      
+
       <!--Carrusel de fotos-->
       <div class="slide">
         <div class="slide-inner">
@@ -77,7 +64,9 @@
             checked="checked"
           />
           <div class="slide-item">
-            <img src="img/arbol-navidad.jpg" alt="Noticia arbol navidad">
+            <a href="noticiaarbol.html">
+              <img src="img/arbol-navidad.jpg" alt="Noticia arbol navidad" />
+            </a>
           </div>
           <input
             class="slide-open"
@@ -88,7 +77,9 @@
             hidden=""
           />
           <div class="slide-item">
-            <img src="img/pueblo-espana.jpg" alt="Imagen noticia pueblo">
+            <a href="noticiapueblo.html">
+              <img src="img/pueblo-espana.jpg" alt="Imagen noticia pueblo"
+            /></a>
           </div>
           <input
             class="slide-open"
@@ -99,7 +90,9 @@
             hidden=""
           />
           <div class="slide-item">
-            <img src="img/gato.jpg" alt="Imagen noticia gato">
+            <a href="noticiagato.html"
+              ><img src="img/gato.jpg" alt="Imagen noticia gato"
+            /></a>
           </div>
           <label for="slide-3" class="slide-control prev control-1">‹</label>
           <label for="slide-2" class="slide-control next control-1">›</label>
@@ -123,7 +116,9 @@
 
       <!--Noticias-->
       <article>
-        <img src="img/arbol-navidad.jpg" alt="Arbol de Navidad con fotos" />
+        <a href="noticiaarbol.html">
+          <img src="img/arbol-navidad.jpg" alt="Arbol de Navidad con fotos"
+        /></a>
         <span>
           <h2>
             <a
@@ -146,11 +141,12 @@
       </article>
 
       <article>
-        <img src="img/gato.jpg" alt="foto de cara de gato" />
+        <a href="noticiagato.html">
+          <img src="img/gato.jpg" alt="foto de cara de gato"
+        /></a>
         <span>
           <h2>
-            <a
-              href="https://www.muyinteresante.es/mascotas/articulo/por-que-tienen-los-gatos-una-bolsa-de-grasa-en-la-barriga-201618477821"
+            <a href="noticiagato.html"
               >¿Qué es la bolsa en la barriga de los gatos?</a
             >
           </h2>
@@ -166,7 +162,9 @@
       </article>
 
       <article>
-        <img src="img/pueblo-espana.jpg" alt="Pueblo típico andaluz" />
+        <a href="noticiapueblo.html">
+          <img src="img/pueblo-espana.jpg" alt="Pueblo típico andaluz"
+        /></a>
         <span>
           <h2>
             <a
