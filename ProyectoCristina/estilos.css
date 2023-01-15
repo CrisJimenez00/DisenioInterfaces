@@ -164,16 +164,22 @@ h2 > a {
 h5 {
   font-weight: lighter;
 }
+a{
+  color: black;
+  text-decoration: none;
+}
 nav {
   display: none;
 } /*ESTÁ DESAPARECIDO PARA PODER TRATAR LA PÁGINA*/
 
+/*Cuerpo de la página*/
 main {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-/*Cabecera*/
+
+/*Título*/
 h1 {
   color: #e28788;
   width: 100%;
@@ -257,4 +263,65 @@ footer p#redes > img {
 
 footer small {
   justify-content: left;
+}
+
+/*Verisón tablet*/
+@media all and (min-width: 600px) {
+  /*Hamburguesa*/
+  div > span.hamburguer-line {
+    display: none;
+  }
+
+  /*Menú*/
+  nav {
+    display: block;
+  }
+  nav li {
+    display: none;
+  }
+
+  header p#buscador {
+    background-color: #fecbad;
+    color: black;
+    order: 3;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    justify-content: center;
+  }
+  ul.noticias {
+    background-color: #e28788;
+    width: 50%;
+  }
+  ul.cursos {
+    background-color: #7293e0;
+    width: 50%;
+  }
+
+  section{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap; 
+   justify-content: space-between;
+  }
+
+  article{
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 3px;
+  }
+  article>a>img{
+    width: 100%;
+    height:65.3%;
+  }
+  article>span>h2{
+    text-align: left;
+    width: 50%;
+  }
 }
