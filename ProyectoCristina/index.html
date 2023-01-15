@@ -63,6 +63,65 @@
     <!--Cuerpo de la página-->
     <main>
       <h1>Últimas noticias</h1>
+      
+      <!--Carrusel de fotos-->
+      <div class="slide">
+        <div class="slide-inner">
+          <input
+            class="slide-open"
+            type="radio"
+            id="slide-1"
+            name="slide"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="slide-item">
+            <img src="img/arbol-navidad.jpg" alt="Noticia arbol navidad">
+          </div>
+          <input
+            class="slide-open"
+            type="radio"
+            id="slide-2"
+            name="slide"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="slide-item">
+            <img src="img/pueblo-espana.jpg" alt="Imagen noticia pueblo">
+          </div>
+          <input
+            class="slide-open"
+            type="radio"
+            id="slide-3"
+            name="slide"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="slide-item">
+            <img src="img/gato.jpg" alt="Imagen noticia gato">
+          </div>
+          <label for="slide-3" class="slide-control prev control-1">‹</label>
+          <label for="slide-2" class="slide-control next control-1">›</label>
+          <label for="slide-1" class="slide-control prev control-2">‹</label>
+          <label for="slide-3" class="slide-control next control-2">›</label>
+          <label for="slide-2" class="slide-control prev control-3">‹</label>
+          <label for="slide-1" class="slide-control next control-3">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slide-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-3" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!--Noticias-->
       <article>
         <img src="img/arbol-navidad.jpg" alt="Arbol de Navidad con fotos" />
         <span>
@@ -107,7 +166,7 @@
       </article>
 
       <article>
-        <img src="img/pueblo-españa.jpg" alt="Pueblo típico andaluz" />
+        <img src="img/pueblo-espana.jpg" alt="Pueblo típico andaluz" />
         <span>
           <h2>
             <a
@@ -148,7 +207,8 @@
               src="img/iconos/corazon.png"
               alt="icono corazon"
               id="icono2"
-            /></div></span>
+            /></div
+        ></span>
       </article>
       <ul>
         <li>1</li>
