@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="estilos.css" />
     <title>Kunska</title>
     <link rel="shortcut icon" href="img/Logo empresa.png" type="image/x-icon" />
+    <script src="jq/jquery-3.6.4.js" type="text/javascript"></script>
+    <script src="jq/funciones.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -19,31 +21,68 @@
         alt="Logo de la empresa Kunska"
         class="logo"
       />
-      <img src="img/iconos/usuario.png" alt="icono usuario" id="icono" />
-      <img src="img/iconos/corazon.png" alt="icono corazon" id="icono" />
+      <picture
+        ><img src="img/iconos/usuario.png" alt="icono usuario" id="icono" />
+        <p>Mi cuenta</p></picture
+      >
+      <picture
+        ><img src="img/iconos/corazon.png" alt="icono corazon" id="icono" />
+        <p id="like">Noticias que me gustan</p></picture
+      >
 
-      <label for="hamburger" class="menu-toogle">
-        <div>
-          <span class="hamburguer-line"></span>
-          <span class="hamburguer-line"></span>
-          <span class="hamburguer-line"></span>
+      <div class="menu">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <nav>
+            <ul class="menu">
+              <li><a href="index.html"> Noticias</a></li>
+              <ul class="noticias">
+                <li><a href="index.html">Últimas noticias</a></li>
+                <li><a href="index.html">Tus noticias favoritas</a></li>
+                <li><a href="index.html">Noticias que te pueden gustar</a></li>
+              </ul>
+              <li><a href="index.html"> Cursos</a></li>
+              <ul class="cursos">
+                <li><a href="index.html">Últimos cursos</a></li>
+                <li><a href="index.html">Mis cursos</a></li>
+                <li><a href="index.html">Lista de cursos</a></li>
+              </ul>
+            </ul>
+          </nav>
+          <div class="menu-items">
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Cursos</a></li>
+          </div>
         </div>
-      </label>
-      <p id="buscador">Buscar...</p>
+      </div>
+
+      <p id="buscador">
+        <input
+          type="text"
+          name="buscador"
+          id="buscadorInput"
+          placeholder="Buscar..."
+        />
+      </p>
     </header>
     <nav>
       <ul class="menu">
         <ul class="noticias">
           <a href="index.html"> Noticias</a>
-          <li>Últimas noticias</li>
-          <li>Tus noticias favoritas</li>
-          <li>Noticias que te pueden gustar</li>
+          <li><a href="index.html">Últimas noticias</a></li>
+          <li><a href="index.html">Tus noticias favoritas</a></li>
+          <li><a href="index.html">Noticias que te pueden gustar</a></li>
         </ul>
         <ul class="cursos">
-          Cursos
-          <li>Últimos cursos</li>
-          <li>Mis cursos</li>
-          <li>Lista de cursos</li>
+          <a href="src/indexCursos.html">Cursos</a>
+          <li><a href="src/indexCursos.html">Últimos cursos</a></li>
+          <li><a href="src/indexCursos.html">Mis cursos</a></li>
+          <li><a href="src/indexCursos.html">Lista de cursos</a></li>
         </ul>
       </ul>
     </nav>
@@ -53,67 +92,87 @@
       <h1>Últimas noticias</h1>
 
       <!--Carrusel de fotos-->
-      <div class="slide">
-        <div class="slide-inner">
-          <input
-            class="slide-open"
-            type="radio"
-            id="slide-1"
-            name="slide"
-            aria-hidden="true"
-            hidden=""
-            checked="checked"
-          />
-          <div class="slide-item">
+      <!--Contenedor del slider-->
+      <section id="slider" class="contenedor-slider">
+        <ul class="slider-wrapper">
+          <li class="current-slide">
+            <a href="noticiagato.html">
+              <picture>
+                <img src="img/gato.jpg" alt="foto de cara de gato" /></picture
+            ></a>
+
+            <div class="caption">
+              <h2 class="slider-title">
+                ¿Qué es la bolsa en la barriga de los gatos?
+              </h2>
+              <p>
+                Siempre hemos asumido que es grasa o piel, pero, ¿cual es su
+                verdadero uso?
+              </p>
+            </div>
+          </li>
+
+          <li>
             <a href="noticiaarbol.html">
-              <img src="img/arbol-navidad.jpg" alt="Noticia arbol navidad" />
-            </a>
-          </div>
-          <input
-            class="slide-open"
-            type="radio"
-            id="slide-2"
-            name="slide"
-            aria-hidden="true"
-            hidden=""
-          />
-          <div class="slide-item">
+              <picture>
+                <img
+                  src="img/arbol-navidad.jpg"
+                  alt="Arbol de Navidad con fotos" /></picture
+            ></a>
+
+            <div class="caption">
+              <h2 class="slider-title">
+                ¿Cuál es el auténtico árbol de navidad?
+              </h2>
+              <p>
+                Siempre hemos asumido que es el abeto por las películas
+                americanas pero, ¿esto es cierto?
+              </p>
+            </div>
+          </li>
+
+          <li>
             <a href="noticiapueblo.html">
-              <img src="img/pueblo-espana.jpg" alt="Imagen noticia pueblo"
-            /></a>
-          </div>
-          <input
-            class="slide-open"
-            type="radio"
-            id="slide-3"
-            name="slide"
-            aria-hidden="true"
-            hidden=""
-          />
-          <div class="slide-item">
-            <a href="noticiagato.html"
-              ><img src="img/gato.jpg" alt="Imagen noticia gato"
-            /></a>
-          </div>
-          <label for="slide-3" class="slide-control prev control-1">‹</label>
-          <label for="slide-2" class="slide-control next control-1">›</label>
-          <label for="slide-1" class="slide-control prev control-2">‹</label>
-          <label for="slide-3" class="slide-control next control-2">›</label>
-          <label for="slide-2" class="slide-control prev control-3">‹</label>
-          <label for="slide-1" class="slide-control next control-3">›</label>
-          <ol class="slide-indicador">
-            <li>
-              <label for="slide-1" class="slide-circulo">•</label>
-            </li>
-            <li>
-              <label for="slide-2" class="slide-circulo">•</label>
-            </li>
-            <li>
-              <label for="slide-3" class="slide-circulo">•</label>
-            </li>
-          </ol>
-        </div>
-      </div>
+              <picture>
+                <img src="img/pueblo-espana.jpg" alt="Pueblo típico andaluz" />
+              </picture>
+            </a>
+
+            <div class="caption">
+              <h2 class="slider-title">Los pueblos medievales de España</h2>
+              <p>
+                ¿Quieres irte de viaje a la españa rural y no sabes donde?
+                Bienvenido a este top de pueblos medievales
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a href="noticiazurdos.html">
+              <picture>
+                <img src="img/zurdo.jpg" alt="Persona zurda escribiendo" />
+              </picture>
+            </a>
+            <div class="caption">
+              <h2 class="slider-title">Curiosidades sobre los zurdos</h2>
+              <p>
+                Además de que puedan escribir con efecto espejo hay muchas mas
+                curiosidades de zurdo de las que sabemos.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="slider-shadow"></div>
+
+        <!-- Controles de Navegacion -->
+        <ul id="control-buttons" class="control-buttons">
+          <!--<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>-->
+        </ul>
+      </section>
 
       <section>
         <!--Noticias-->
@@ -244,14 +303,5 @@
 
       <small>© Copyright 2022 Kunska Company. All Rights Reserved.</small>
     </footer>
-
-    <!--Versión Tablet-->
-
-    <!--Header-->
-    <header></header>
-    <!--Body-->
-    <main></main>
-    <!--Footer-->
-    <footer></footer>
   </body>
 </html>

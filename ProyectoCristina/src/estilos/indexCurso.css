@@ -13,14 +13,14 @@ header {
 
 /*Buscador*/
 header p#buscador {
-  background-color: #e28788;
+  background-color: #7293e0;
   width: 100%;
   height: 2.5em;
   padding: 9px;
   margin-top: -10%;
 }
 #buscadorInput {
-  background-color: #e28788;
+  background-color: #7293e0;
   color: black;
   border: none;
   order: 3;
@@ -371,10 +371,12 @@ article > span {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-right: 3em;
 }
 article a {
   font-size: 18px;
 }
+
 /*Iconos del árticulo*/
 article img#icono,
 article img#icono2 {
@@ -564,6 +566,20 @@ footer small {
   header picture > p {
     display: block;
     color: black;
+  }
+  /*Cuerpo de la página*/
+  article {
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 3px;
+  }
+  article > a img {
+    width: 100%;
+    height: 65.3%;
+  }
+  article > span > h2 {
+    text-align: left;
+    width: 50%;
   }
   /*Footer*/
   footer {
