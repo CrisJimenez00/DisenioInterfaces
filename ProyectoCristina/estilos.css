@@ -577,6 +577,19 @@ footer small {
     display: block;
     color: black;
   }
+  article {
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 3px;
+  }
+  article > a img {
+    width: 100%;
+    height: 65.3%;
+  }
+  article > span > h2 {
+    text-align: left;
+    width: 50%;
+  }
   /*Footer*/
   footer {
     background-color: black;

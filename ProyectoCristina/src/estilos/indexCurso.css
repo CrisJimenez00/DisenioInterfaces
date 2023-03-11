@@ -37,10 +37,13 @@ header img#icono {
   height: 2.3em;
   margin-top: -5%;
 }
-header picture > p {
+
+header picture  p {
   display: none;
 }
-
+header picture a{
+  margin-top: -5%;
+}
 /*Logo*/
 header img.logo {
   height: auto;
@@ -538,6 +541,17 @@ footer small {
     margin-left: -0.7em;
     margin-bottom: 4em;
   }
+  header picture  a>p {
+    display: block;
+    width: 10em;
+    margin-left: -0.7em;
+    margin-bottom: 4em;
+  }
+  header picture > p {
+    width: 10em;
+    margin-left: -0.7em;
+    margin-bottom: 4em;
+  }
   header picture > p#like {
     margin-left: -3em;
   }
@@ -567,6 +581,7 @@ footer small {
     display: block;
     color: black;
   }
+  
   /*Cuerpo de la página*/
   article {
     width: 25%;
