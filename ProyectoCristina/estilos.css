@@ -410,7 +410,7 @@ main > ul > li#pass {
 }
 
 /*Footer*/
-footer {
+footer, footer a {
   background-color: black;
   display: flex;
   flex-direction: row;
